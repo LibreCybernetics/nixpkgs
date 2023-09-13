@@ -57,7 +57,7 @@
 , systemd
 , tree-sitter
 , texinfo
-, webkitgtk
+, webkitgtk_4_1
 , wrapGAppsHook
 
 # Boolean flags
@@ -278,7 +278,7 @@ mkDerivation (finalAttrs: {
   ] ++ lib.optionals withXinput2 [
     libXi
   ] ++ lib.optionals withXwidgets [
-    webkitgtk
+    webkitgtk_4_1
   ] ++ lib.optionals stdenv.isDarwin [
     sigtool
   ] ++ lib.optionals withNS [
